@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_animating_stackview_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ERT-Kg-qLx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ah-UZ-hP1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryW-0P-FtE">
+                                                <rect key="frame" x="0.0" y="6.5" width="375" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="⚙ MENU">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jbb-nc-i3f"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ryW-0P-FtE" secondAttribute="trailing" id="2jI-eN-LUi"/>
+                                            <constraint firstItem="ryW-0P-FtE" firstAttribute="centerX" secondItem="6ah-UZ-hP1" secondAttribute="centerX" id="cS0-Rh-zDa"/>
+                                            <constraint firstItem="ryW-0P-FtE" firstAttribute="centerY" secondItem="6ah-UZ-hP1" secondAttribute="centerY" id="dMk-HO-qnz"/>
+                                            <constraint firstItem="ryW-0P-FtE" firstAttribute="leading" secondItem="6ah-UZ-hP1" secondAttribute="leading" id="dld-UU-2Rq"/>
+                                            <constraint firstAttribute="height" constant="60" id="oYg-Gq-K0U"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTz-nb-ktk">
+                                        <rect key="frame" x="0.0" y="60" width="375" height="60"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aL1-EU-pQv">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="60"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSo-EC-yYa">
+                                        <rect key="frame" x="0.0" y="180" width="375" height="60"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="snd-DS-lCi">
+                                        <rect key="frame" x="0.0" y="240" width="375" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2e-Hh-zxc">
+                                        <rect key="frame" x="0.0" y="300" width="375" height="60"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDo-Pd-Fc8">
+                                        <rect key="frame" x="0.0" y="360" width="375" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ERT-Kg-qLx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1oS-ss-rME"/>
+                            <constraint firstItem="ERT-Kg-qLx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ikT-j3-pRj"/>
+                            <constraint firstAttribute="trailing" secondItem="ERT-Kg-qLx" secondAttribute="trailing" id="x2G-ey-vug"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="emojiView" destination="MTz-nb-ktk" collectionClass="NSMutableArray" id="nTp-bq-7dq"/>
+                        <outletCollection property="emojiView" destination="aL1-EU-pQv" collectionClass="NSMutableArray" id="Q0T-0N-yDM"/>
+                        <outletCollection property="emojiView" destination="nSo-EC-yYa" collectionClass="NSMutableArray" id="BZz-uY-hUA"/>
+                        <outletCollection property="emojiView" destination="snd-DS-lCi" collectionClass="NSMutableArray" id="aVT-gZ-DGT"/>
+                        <outletCollection property="emojiView" destination="d2e-Hh-zxc" collectionClass="NSMutableArray" id="oAY-17-t9a"/>
+                        <outletCollection property="emojiView" destination="zDo-Pd-Fc8" collectionClass="NSMutableArray" id="TwK-Ik-cPW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
