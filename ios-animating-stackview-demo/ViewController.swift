@@ -10,6 +10,7 @@ import UIKit
 
 final class ViewController: UIViewController {
 
+    @IBOutlet weak var selectMenuLabel: UILabel!
     @IBOutlet var emojiView: [UIView]! {
 
         didSet {
@@ -24,7 +25,16 @@ final class ViewController: UIViewController {
     }
 
     @IBAction func didTapMenu(_ sender: UIButton) {
+        toggleMenu()
+        selectMenuLabel.text = ""
+    }
 
+    @IBAction func didSelectedMenu(_ sender: UIButton) {
+        toggleMenu()
+        selectMenuLabel.text = sender.titleLabel?.text
+    }
+
+    func toggleMenu() {
         UIView.animate(withDuration: 0.3) {
             self.emojiView.forEach {
                 $0.isHidden = !$0.isHidden
